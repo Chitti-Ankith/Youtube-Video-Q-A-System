@@ -16,4 +16,4 @@ The script simply needs an OPEN AI Key to be inputted in order to work.
 split text and build vector index using FAISS. Initilalize OpenAI LLM and configure the RetrievalQAWithSourcesChain in order to answer
 the required questions along with source videos for the same. 
 
-'short_qa_script.py' is a shorted version of the above script that only parses a fewer number of videos in order to reduce API cost.
+'short_qa_script.py' is a shorter version of the above script that only parses a fewer number of videos in order to reduce API cost.
