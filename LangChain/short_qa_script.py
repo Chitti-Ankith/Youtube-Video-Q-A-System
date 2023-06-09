@@ -5,7 +5,7 @@ from urllib.parse import urlparse, parse_qs
 from moviepy.editor import *
 from pympler import asizeof
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "<insert_save_path>"
 import openai
 import time
 
@@ -22,26 +22,26 @@ SAVE_PATH = "/Users/chitti.ankith/Desktop/LangChain/audios/"
 
 start_time = time.time()
 
-# link=open('Yt_video_ids', 'r')
-# d_counter = 0
+link=open('Yt_video_ids', 'r')
+d_counter = 0
 
-# for id in link:
-  # yt_url = "https://www.youtube.com/watch?v=" + id;
-  # print("Downloading : ", yt_url)
+for id in link:
+  yt_url = "https://www.youtube.com/watch?v=" + id;
+  print("Downloading : ", yt_url)
 
-  # try:
-    # yt = YouTube(yt_url)
-    # audio_stream = yt.streams.filter(only_audio=True).first()
-    # print(yt.streams.filter(only_audio=True).first())
-  # except pytube.exceptions.VideoUnavailable:
-    # print("Video : ", yt_url, " is unavaialable, skipping.")
-    # continue
+  try:
+    yt = YouTube(yt_url)
+    audio_stream = yt.streams.filter(only_audio=True).first()
+    print(yt.streams.filter(only_audio=True).first())
+  except pytube.exceptions.VideoUnavailable:
+    print("Video : ", yt_url, " is unavaialable, skipping.")
+    continue
 
-  # audio_stream.download(SAVE_PATH)
-  # d_counter+=1
-  # print("Downloaded ", yt_url)
+  audio_stream.download(SAVE_PATH)
+  d_counter+=1
+  print("Downloaded ", yt_url)
   
-# print("Downloaded ", str(d_counter), " streams")
+print("Downloaded ", str(d_counter), " streams")
 
 download_end_time = time.time()
 print("Downloading streams took ", str(download_end_time - start_time))
