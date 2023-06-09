@@ -4,7 +4,7 @@ from pytube import YouTube
 from urllib.parse import urlparse, parse_qs
 from moviepy.editor import *
 
-SAVE_PATH = "C:/Users/aryan/Downloads/EVA/audios/"
+SAVE_PATH = "<insert_save_path>"
 
 link=open('Yt_video_ids', 'r')
 d_counter = 0
