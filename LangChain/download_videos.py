@@ -3,7 +3,7 @@ import pytube
 from pytube import YouTube
 from urllib.parse import urlparse, parse_qs
 
-SAVE_PATH = "/Users/chitti.ankith/Desktop/videos/"
+SAVE_PATH = "<insert_save_path>"
 
 link=open('Yt_video_ids', 'r')
 d_counter = 0
