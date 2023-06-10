@@ -7,7 +7,8 @@ Utilized OpenAI Whisper API and LangChain frameworks to help with audio transcri
 
 The script simply needs an OPEN AI Key to be inputted in order to work.
 
-'Yt_video_ids' contains the list of youtube videos to download and transcribe.
+'Yt_video_ids' contains the list of youtube videos to download and transcribe. The list has been taken from HowTo100M instructional
+video dataset.
 
 'download_videos.py' is a helper script to download the youtube videos.
 'download_yt_audio.py' is a helper script to download youtube audios.
